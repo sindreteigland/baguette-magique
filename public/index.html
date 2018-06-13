@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>baguette magique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="app.js"></script>
+
+    <style>
+        html {
+            height: 100%
+        }
+
+        body {
+            background: #87898b;
+            color: white;
+            height: 100%
+        }
+
+        #app {
+            height: 100%
+        }
+
+        .canvas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        button {
+            width: 100px;
+            height: 50px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+    </div>
+    <script type="text/javascript">
+        var el = document.getElementById('app');
+        var app = Elm.Main.embed(el);
+    </script>
+
+</html>
