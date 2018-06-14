@@ -22,17 +22,17 @@ type alias Model =
 
 
 type Msg
-    = Msg1
-    | Msg2
+    = Send
+    | Recieve String
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        Msg1 ->
+        Send ->
             ( model, Cmd.none )
 
-        Msg2 ->
+        Recieve message ->
             ( model, Cmd.none )
 
 
